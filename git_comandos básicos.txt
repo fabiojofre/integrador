@@ -1,0 +1,28 @@
+git init
+
+git config --global user.name "Fabio Jorge"
+
+git config --global user.email "fabiojofre@gmail.com"
+
+
+git status
+
+git add .
+
+git commit -m "Primeiro commit"
+
+git log
+
+git remote add origin git@github.com:fabiojofre/integrador.git
+
+git push -u origin main
+
+
+########se caso der aceso negado na permissão ###############
+ssh-keygen -t rsa -b 4096 -C "fabiojofre@gmail.com"
+
+# digitar senha quantas vezes solicitado
+
+ssh-agent -s
+
+clip < ~/.ssh/id_rsa.pub
